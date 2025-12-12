@@ -3,7 +3,8 @@ import { BoxStyled, ButtonStyled, CloseButton, ExerciceContainer, ResultBox } fr
 
 /**
  * This component have a problem :
- * 
+ * The button are supposed to update the number in 400 ms
+ * But when I click fast, the number are only updated once
  */
 export const Exo1 = ({onClose}: {onClose: () => void}) => {
 	const [number, setNumber] = useState(0);

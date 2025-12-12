@@ -10,7 +10,8 @@ import {
 
 /**
  * This component have a problem :
- *
+ * It should update the number every 100ms
+ * But when the component stop being displayed, it continue to update the number
  */
 const SubComponent = ({ onClose, setNumber }: { onClose: () => void, setNumber: React.Dispatch<React.SetStateAction<number>>}) => {
   // biome-ignore lint/correctness/useExhaustiveDependencies: <only on mount>

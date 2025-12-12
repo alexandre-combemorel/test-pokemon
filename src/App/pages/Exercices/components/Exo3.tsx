@@ -12,7 +12,7 @@ const sleep = async (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 /**
- * This method should the nth fibonnacci number.
+ * This method should return the nth fibonnacci number.
  * for exemple :
  * 0 should return 0
  * 1 should return 1
@@ -26,7 +26,7 @@ const sleep = async (ms: number) => {
 export const compute = async (number: number) => {
   const start = Date.now();
   console.log("start with number : ", number);
-  await sleep(1000);
+  await sleep(1000); // To delete
   console.log(`end elapsed time : ${Date.now() - start}ms`);
   return number;
 };
