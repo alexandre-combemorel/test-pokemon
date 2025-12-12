@@ -1,6 +1,6 @@
 // styles & components
-import { LinkStyled, MenuStyled } from "./Menu.style"
 import { Chip } from "@mui/material"
+import { LinkStyled, MenuStyled } from "./Menu.style"
 // assets
 // import pokedexImage from "../../../../public"
 
@@ -12,6 +12,7 @@ export default function Menu() {
             <LinkStyled to={"/gallery"}><Chip label="📷 Gallery" /></LinkStyled>
             <LinkStyled to={"/pokedex"}><Chip label="Pokedex" icon={<img src={"/images/pokedex.png"} width="17"/>} /></LinkStyled>
             <LinkStyled to={"/pokedex-listing"}><Chip label="Pokedex Listing" icon={<img src={"/images/pokeball.png"} width="17"/>} /></LinkStyled>
+            <LinkStyled to={"/exercices"}><Chip label="📝 Exercices" /></LinkStyled>
         </MenuStyled>
     </nav>
 }
