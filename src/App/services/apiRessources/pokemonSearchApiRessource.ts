@@ -1,8 +1,9 @@
-import { Pokedex } from "../../Types/Pokemon"
-import { BaseApiRessource } from "./baseApiRessource"
+import type { Pokedex } from "../../Types/Pokemon";
+import { BaseApiRessource } from "./baseApiRessource";
 
 export class PokemonSearchApiRessource extends BaseApiRessource {
-    searchPokemon(pokemonName: string): Promise<any> {
-        return this.get<Pokedex>(`/pokemon/${pokemonName}`)
-    }
+	searchPokemon(pokemonName: string): Promise<any> {
+		return this.get<Pokedex>(`/pokemon/${pokemonName}`);
+	}
 }
+

@@ -5,5 +5,5 @@ node_modules
 # production
 dist
 # misc
-.DS_Store
+**/.DS_Store
 /.vscode
