@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Installing Dependencies",
-      "command": "yarn install"
+      "command": "pnpm install"
     }
   ],
 
@@ -11,27 +11,28 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
+      "command": "pnpm start",
       "runAtStart": true,
       "preview": {
-        "port": 3000
+        "port": 9000
       }
     },
     "build": {
       "name": "build",
-      "command": "yarn build"
+      "command": "pnpm build"
     },
     "test": {
       "name": "test",
-      "command": "yarn test"
+      "command": "pnpm test"
     },
     "eject": {
       "name": "eject",
-      "command": "yarn eject"
+      "command": "pnpm eject"
     },
     "typegen": {
       "name": "typegen",
-      "command": "yarn typegen"
+      "command": "pnpm typegen"
     }
   }
 }
+
