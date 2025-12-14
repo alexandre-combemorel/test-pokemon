@@ -33,7 +33,6 @@ export default function () {
 	});
 
 	const onSubmitRest = async (data: any) => {
-		console.log("test");
 		setLoadingRest(true);
 		const result = await new PokemonSearchApiRessource().searchPokemon(
 			data.name,
