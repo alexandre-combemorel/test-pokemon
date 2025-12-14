@@ -1,5 +1,3 @@
-![Final Render](./readme_images/AppMenu.png)
-
 # Exercice 1: (html/css integration)
 ## Create this rendering
 The goal is to create a gallery of images as followed: (on page gallery)
