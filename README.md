@@ -1,34 +1,13 @@
-# Exercice 1: (html/css integration)
+# Exercice: (html/css integration)
+
 ## Create this rendering
+
 The goal is to create a gallery of images as followed: (on page gallery)
 ![Final Render](./readme_images/finalRender.png)
 
 By any way you find appropriate
 
-# Exercice 2: (API use)
-## Get the list of the first generation pokemon
-
-![PokeApi](./readme_images/pokeapi.png)
-
-The goal is to fetch some pokemons data through an API: (on page pokedex listing)
-- display the sprites of the 150 first pokemon (the real ones !!!)
-- on click, display the card with some extra info on the pokemon
-
-**You can use the libraries that you want. And feel free to think about any architecture, structure, or test that you would expect to see in a project**
-
-For this exercise we will use the **PokeAPI** API endpoint which can be used either with GraphQL or REST:
-
-Documentation:
-https://pokeapi.co/docs/v2#pokemon
-
-Public API GraphQL:
-https://beta.pokeapi.co/graphql/console/
-
-Public API Rest:
-https://pokeapi.co/api/v2/pokemon/?limit=20&offset=20
-
-# Exercice 3: (Code review and improvement)
-## Pokedex Code Quality
+## Exercice Pokedex Code Quality (review)
 
 <img src="./readme_images/pokedex.png" width=120 />
 
@@ -42,6 +21,14 @@ Explain the best practices or coding standards that should be followed when writ
 
 Overall, the goal of the code review exercise is to assess your abilities to write high-quality code, identify and fix issues, and follow best practices and coding standards.
 
+Public API Rest:
+https://pokeapi.co/api/v2/pokemon/?limit=20&offset=20
+
+## Exercice algo / react
+
+<img src="./readme_images/react-logo.png" width=150 />
+
+3 exercices. 2 to test some react concept, 1 to test algorithm
 
 # Project Info:
 
@@ -49,13 +36,12 @@ Overall, the goal of the code review exercise is to assess your abilities to wri
 
 In the project directory, you can run:
 
-### `yarn start`
+### `pnpm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
 
 ## Available libraries / technologies:
 
 - styled-components: https://styled-components.com/
 - css/sass: https://sass-lang.com/
-
