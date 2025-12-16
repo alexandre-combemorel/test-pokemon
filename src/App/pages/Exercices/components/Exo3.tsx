@@ -22,6 +22,9 @@ const sleep = async (ms: number) => {
  * 5 should return 5
  * 6 should return 8
  * 7 should return 13
+ *
+ * 2 method should be implemented recursive method and non-recursive one.
+ * Wich method is the most optimized ?
  */
 export const compute = async (number: number) => {
   const start = Date.now();
