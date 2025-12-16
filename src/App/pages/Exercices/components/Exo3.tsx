@@ -31,8 +31,6 @@ export const compute = async (number: number) => {
   return number;
 };
 
-
-
 export const Exo3 = ({ onClose }: { onClose: () => void }) => {
   const [number, setNumber] = useState<number>(0);
   const [result, setResult] = useState<number>(0);
@@ -54,7 +52,7 @@ export const Exo3 = ({ onClose }: { onClose: () => void }) => {
           onChange={(e) => setNumber(Number(e.target.value))}
         />
         <ButtonStyled onClick={() => onClick(number)}>Compute</ButtonStyled>
-      <ResultBox>{result}</ResultBox>
+        <ResultBox>{result}</ResultBox>
       </BoxStyled>
     </ExerciceContainer>
   );

@@ -1,35 +1,41 @@
 import { useState } from "react";
-import { BoxStyled, ButtonStyled, CloseButton, ExerciceContainer, ResultBox } from "./Exo.styles";
+import {
+  BoxStyled,
+  ButtonStyled,
+  CloseButton,
+  ExerciceContainer,
+  ResultBox,
+} from "./Exo.styles";
 
 /**
  * This component have a problem :
  * The button are supposed to update the number in 400 ms
  * But when I click fast, the number are only updated once
  */
-export const Exo1 = ({onClose}: {onClose: () => void}) => {
-	const [number, setNumber] = useState(0);
+export const Exo1 = ({ onClose }: { onClose: () => void }) => {
+  const [number, setNumber] = useState(0);
 
-	const onAdd = () => {
-		setTimeout(() => {
-			setNumber(number + 1);
-		}, 400);
-	};
+  const onAdd = () => {
+    setTimeout(() => {
+      setNumber(number + 1);
+    }, 400);
+  };
 
-	const onRemove = () => {
-		setTimeout(() => {
-			setNumber(number - 1);
-		}, 400);
-	};
+  const onRemove = () => {
+    setTimeout(() => {
+      setNumber(number - 1);
+    }, 400);
+  };
 
-	return (
-		<ExerciceContainer>
+  return (
+    <ExerciceContainer>
       <CloseButton onClick={onClose}>X</CloseButton>
       <h2>Exercice 1</h2>
-			<BoxStyled>
-				<ButtonStyled onClick={onAdd}>Add</ButtonStyled>
+      <BoxStyled>
+        <ButtonStyled onClick={onAdd}>Add</ButtonStyled>
         <ResultBox>{number}</ResultBox>
-				<ButtonStyled onClick={onRemove}>Remove</ButtonStyled>
-			</BoxStyled>
-		</ExerciceContainer>
-	);
+        <ButtonStyled onClick={onRemove}>Remove</ButtonStyled>
+      </BoxStyled>
+    </ExerciceContainer>
+  );
 };
